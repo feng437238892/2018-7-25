@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>666</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .blue {
+            color:red;
+        }
+        .important{
+            font-weight:bold;
+            font-size:40px;
+            color:#393;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>标题1</h1>
+<h2>标题2</h2>
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
+<div>这是非常重要的文本！</div>
+<br>
+<button>向元素添加类</button>
+<script>
+    $(document).ready(function(){
+      $('button').click(function(){
+        $('h1,h2,p').addClass('blue');
+        $('div').addClass('important')
+      })
+    })
+</script>
+</body>
+</html>
